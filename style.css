@@ -150,10 +150,14 @@ nav {
     var(--header-background-color),
     var(--white)
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.1;
-  z-index: -1;
+  .header__container::before {
+    /* ... other properties ... */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* ... */
+  }
 }
 
 .header__container::after {
@@ -250,10 +254,14 @@ nav {
     var(--header-background-color),
     var(--white)
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.1;
-  z-index: -1;
+  .about__image::before {
+    /* ... other properties ... */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* ... */
+  }
 }
 
 .shop__card:nth-child(1)::before {
@@ -341,10 +349,14 @@ nav {
     var(--background-color),
     var(--white)
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.1;
-  z-index: -1;
+  .banner__container::before {
+    /* ... other properties ... */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* ... */
+  }
 }
 
 .about__image::after {
@@ -486,10 +498,14 @@ nav {
     var(--background-color),
     var(--white)
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.1;
-  z-index: -1;
+  .banner__container::after {
+    /* ... other properties ... */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* ... */
+  }
 }
 
 .banner__container::after {
@@ -509,10 +525,14 @@ nav {
     var(--background-color),
     var(--white)
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.1;
-  z-index: -1;
+  .footer__some-element::before {
+    /* ... other properties ... */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* ... */
+  }
 }
 
 .banner__container p {
