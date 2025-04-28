@@ -14,192 +14,270 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-</head>
-<body>
-    <header>
-      <nav>
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#">STEED</a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT US</a></li>
-          <li><a href="#service">SERVICE</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <div class="nav__btns">
-          <button class="btn"><i class="ri-search-line"></i></button>
-          <button class="btn"><i class="ri-shopping-bag-line"></i></button>
-        </div>
-      </nav>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-      <div class="section__container header__container">
-        <h1>CONTINUES U2T STROM LEDAL FIGHTER</h1>
-        <p class="section__description">
-          Engineered for speed, precision, and endurance, this machine is built
-          to dominate the roads.
-        </p>
-        <div class="header__link">
+  <!-- Font Awesome for additional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="nav__logo">
+        <a href="#">Cool Bikes</a>
+      </div>
+    
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    
+      <div class="nav__btns">
+        <button class="btn"><i class="fas fa-search"></i></button>
+        <button class="btn"><i class="fas fa-shopping-cart"></i></button>
+      </div>
+    
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>    
+
+    <div class="section__container header__container">
+      <h1>CONTINUES U2T STROM LEDAL FIGHTER</h1>
+      <p class="section__description">
+        Engineered for speed, precision, and endurance, this machine is built
+        to dominate the roads.
+      </p>
+      <div class="header__link">
+        <a href="#">
+          <span><i class="ri-arrow-right-long-line"></i></span>
+          Learn More
+        </a>
+      </div>
+      <img src="assets/header.png" alt="header" />
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content" data-aos="fade-up">
+      <h1>Ride Your Dreams</h1>
+      <p>Unleash the power within. Find your perfect ride today.</p>
+      <a href="#shop" class="hero__btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Scroll Down Button -->
+  <div class="scroll__down">
+    <a href="#about">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
+
+  <!-- Shop Section -->
+  <section class="shop" id="shop">
+    <div class="section__container shop__container">
+      <div class="shop__card">
+        <p>HELMET</p>
+        <h4>MONZA MODULAR HELMET</h4>
+        <img src="assets/shop-1.png" alt="shop" />
+        <div>
           <a href="#">
             <span><i class="ri-arrow-right-long-line"></i></span>
             Learn More
           </a>
-        </div>
-        <img src="assets/header.png" alt="header" />
-      </div>
-    </header>
-
-    <section class="shop">
-      <div class="section__container shop__container">
-        <div class="shop__card">
-          <p>HELMET</p>
-          <h4>MONZA MODULAR HELMET</h4>
-          <img src="assets/shop-1.png" alt="shop" />
-          <div>
-            <a href="#">
-              <span><i class="ri-arrow-right-long-line"></i></span>
-              Learn More
-            </a>
-            <span>Exclusive</span>
-          </div>
-        </div>
-        <div class="shop__card">
-          <p>HELMET</p>
-          <h4>AXOR APEX - HEX-2</h4>
-          <img src="assets/shop-2.png" alt="shop" />
-          <div>
-            <a href="#">
-              <span><i class="ri-arrow-right-long-line"></i></span>
-              Learn More
-            </a>
-            <span>Exclusive</span>
-          </div>
-        </div>
-        <div class="shop__card">
-          <p>HELMET</p>
-          <h4>BELL SRT MODULAR</h4>
-          <img src="assets/shop-3.png" alt="shop" />
-          <div>
-            <a href="#">
-              <span><i class="ri-arrow-right-long-line"></i></span>
-              Learn More
-            </a>
-            <span>Exclusive</span>
-          </div>
+          <span>Exclusive</span>
         </div>
       </div>
-    </section>
-
-    <section class="choose" id="choose">
-      <div class="section__container choose__container">
-        <div class="choose__header">
-          <h2 class="section__header">CHOOSE YOUR FAVORITE MOTORCYCLE</h2>
-          <p>Find the ride that matches your soul</p>
+      <div class="shop__card">
+        <p>HELMET</p>
+        <h4>AXOR APEX - HEX-2</h4>
+        <img src="assets/shop-2.png" alt="shop" />
+        <div>
+          <a href="#">
+            <span><i class="ri-arrow-right-long-line"></i></span>
+            Learn More
+          </a>
+          <span>Exclusive</span>
         </div>
-        
-        <!-- Swiper Container -->
-        <div class="swiper chooseSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="choose__card">
-                <img src="assets/choose-1.jpg" alt="Roadster">
-                <div class="choose__card__content">
-                  <h4>R7</h4>
-                  <p>ROADSTER</p>
-                  <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="choose__card">
-                <img src="assets/choose-2.jpg" alt="Cruiser">
-                <div class="choose__card__content">
-                  <h4>X1</h4>
-                  <p>CRUISER</p>
-                  <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="choose__card">
-                <img src="assets/choose-3.jpg" alt="Sportster">
-                <div class="choose__card__content">
-                  <h4>S9</h4>
-                  <p>SPORTSTER</p>
-                  <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="choose__card">
-                <img src="assets/choose-4.jpg" alt="Adventure">
-                <div class="choose__card__content">
-                  <h4>V4</h4>
-                  <p>ADVENTURE</p>
-                  <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
-                </div>
+      </div>
+      <div class="shop__card">
+        <p>HELMET</p>
+        <h4>BELL SRT MODULAR</h4>
+        <img src="assets/shop-3.png" alt="shop" />
+        <div>
+          <a href="#">
+            <span><i class="ri-arrow-right-long-line"></i></span>
+            Learn More
+          </a>
+          <span>Exclusive</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Choose Your Motorcycle Section -->
+  <section class="choose" id="choose">
+    <div class="section__container choose__container">
+      <div class="choose__header">
+        <h2 class="section__header">CHOOSE YOUR FAVORITE MOTORCYCLE</h2>
+        <p>Find the ride that matches your soul</p>
+      </div>
+
+      <!-- Swiper Container -->
+      <div class="swiper chooseSwiper">
+        <div class="swiper-wrapper">
+          <!-- Swiper Slides -->
+          <div class="swiper-slide">
+            <div class="choose__card">
+              <img src="assets/choose-1.jpg" alt="Roadster">
+              <div class="choose__card__content">
+                <h4>R7</h4>
+                <p>ROADSTER</p>
+                <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
               </div>
             </div>
           </div>
-
-          <!-- Add Pagination if needed -->
-          <div class="swiper-pagination"></div>
-          
-          <!-- Add Navigation buttons if needed -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-slide">
+            <div class="choose__card">
+              <img src="assets/choose-2.jpg" alt="Cruiser">
+              <div class="choose__card__content">
+                <h4>X1</h4>
+                <p>CRUISER</p>
+                <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="choose__card">
+              <img src="assets/choose-3.jpg" alt="Sportster">
+              <div class="choose__card__content">
+                <h4>S9</h4>
+                <p>SPORTSTER</p>
+                <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="choose__card">
+              <img src="assets/choose-4.jpg" alt="Adventure">
+              <div class="choose__card__content">
+                <h4>V4</h4>
+                <p>ADVENTURE</p>
+                <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>    
 
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h4>ABOUT</h4>
-          <p class="section__description">
-            Experience the unstoppable power of cutting-edge design and
-            high-performance engineering. Ride with confidence and unleash the
-            thrill of adventure like never before!
-          </p>
-        </div>
-        <!-- Other Footer Content... -->
+        <!-- Swiper Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      // Initialize Swiper
-      const swiper = new Swiper('.chooseSwiper', {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+  <!-- Contact Me Section -->
+  <section id="about" data-aos="fade-up">
+    <div class="section__container">
+      <h2>CONTACT ME</h2>
+      <p><strong>Email:</strong> <a href="mailto:abhirajsinha52@gmail.com">abhirajsinha52@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:(+91) 9608950415">(+91) 9608950425</a></p>
+      <p>&copy; 2025 STEED. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services__container" id="service">
+    <h2 class="section__title" data-aos="fade-up">Our Services</h2>
+    <div class="services__card" data-aos="fade-right">
+      <i class="fas fa-motorcycle service-icon"></i>
+      <h3>Custom Bikes</h3>
+      <p>Unique, hand-crafted motorcycles tailored to your vision.</p>
+    </div>
+    <div class="services__card" data-aos="fade-up">
+      <i class="fas fa-helmet-safety service-icon"></i>
+      <h3>Helmet Fitting</h3>
+      <p>Perfect helmet fitment for maximum safety and comfort.</p>
+    </div>
+    <div class="services__card" data-aos="fade-up">
+      <i class="fas fa-tools service-icon"></i>
+      <h3>Maintenance</h3>
+      <p>Expert motorcycle servicing to keep you on the road longer.</p>
+    </div>
+    <div class="services__card" data-aos="fade-left">
+      <i class="fas fa-vest service-icon"></i>
+      <h3>Riding Gear</h3>
+      <p>Top-quality gear to match your riding style and protection needs.</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h4>ABOUT US</h4>
+        <p class="section__description">
+          We are passionate about motorcycles and providing top-notch products and services for riders worldwide.
+          Experience the unstoppable power of cutting-edge design and
+          high-performance engineering. Ride with confidence and unleash the
+          thrill of adventure like never before!
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#">Custom Bikes</a></li>
+          <li><a href="#">Helmet Fitting</a></li>
+          <li><a href="#">Maintenance</a></li>
+          <li><a href="#">Riding Gear</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+
+    // Initialize Swiper
+    const swiper = new Swiper('.chooseSwiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
         },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
+        1024: {
+          slidesPerView: 4,
         },
-        breakpoints: {
-          // For larger screens, display 3 items
-          768: {
-            slidesPerView: 3,
-          },
-          // For even larger screens, display 4 items
-          1024: {
-            slidesPerView: 4,
-          },
-        },
-      });
-    </script>
+      },
+    });
+  </script>
+
 </body>
 </html>
