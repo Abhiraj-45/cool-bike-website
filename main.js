@@ -1,43 +1,62 @@
-// Hamburger Menu Toggle
-const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.getElementById('nav-links');
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
 
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+menuBtn.addEventListener("click", (e) => {
+  navLinks.classList.toggle("open");
+
+  const isOpen = navLinks.classList.contains("open");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
-// Hover Effect for Buttons
-document.querySelectorAll('.btn').forEach(button => {
-  button.addEventListener('mouseenter', () => {
-    button.style.backgroundColor = '#ff6f00';
-  });
-
-  button.addEventListener('mouseleave', () => {
-    button.style.backgroundColor = 'orange';
-  });
+navLinks.addEventListener("click", (e) => {
+  navLinks.classList.remove("open");
+  menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-// Initialize Swiper
-const swiper = new Swiper('.chooseSwiper', {
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+};
+
+ScrollReveal().reveal(".header__container h1", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".header__container .section__description", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".header__link", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".shop__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".about__content .section__header", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".about__content .section__description", {
+  ...scrollRevealOption,
+  delay: 500,
+  interval: 500,
+});
+ScrollReveal().reveal(".about__stats", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+const swiper = new Swiper(".swiper", {
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    // For larger screens, display 3 items
-    768: {
-      slidesPerView: 3,
-    },
-    // For even larger screens, display 4 items
-    1024: {
-      slidesPerView: 4,
-    },
-  },
+  slidesPerView: "auto",
+  spaceBetween: 20,
+});
+
+ScrollReveal().reveal(".banner__container p", {
+  duration: 1000,
+  interval: 500,
 });
